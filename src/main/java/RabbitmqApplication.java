@@ -29,8 +29,8 @@ public class RabbitmqApplication {
 //        container.setQueueNames("myQueue");
 //        container.start();
 //
-//        RabbitTemplate template = new RabbitTemplate(cf);
-//        template.convertAndSend("myExchange", "foo.bar", "Hello World!");
+//        RabbitTemplate templates = new RabbitTemplate(cf);
+//        templates.convertAndSend("myExchange", "foo.bar", "Hello World!");
 //        Thread.sleep(1000);
 //        container.stop();
 //    }

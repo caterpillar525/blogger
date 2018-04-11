@@ -1,5 +1,6 @@
-package com.vimin.security.config;
+package com.vimin.configuration;
 
+import com.vimin.encoder.MyPasswordEncoder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,6 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
+                .passwordEncoder(new MyPasswordEncoder())
                 .withUser("user")
                 .password("password")
                 .roles("USER");
