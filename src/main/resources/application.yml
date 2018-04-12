@@ -1,6 +1,6 @@
 logging:
   level:
-    root: WARN
+    root: INFO, WARN, DEBUG, ERROR
     org.springframework.web: INFO
 
 spring:
