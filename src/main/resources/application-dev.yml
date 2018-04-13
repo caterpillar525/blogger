@@ -23,6 +23,8 @@ spring:
       ddl-auto: create
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  thymeleaf:
+    cache: false
 
 
 
